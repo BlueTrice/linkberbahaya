@@ -26,22 +26,19 @@ body {
 }
 
 .page {
-  display: none;
+  display: none;            /* default sembunyi */
   width: 100%;
   min-height: 100vh;
   padding: 40px 20px;
   text-align: center;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;   /* ⬅️ bikin tengah vertikal */
-  align-items: center;       /* ⬅️ bikin tengah horizontal */
 }
 
 .page.active {
-  display: flex;
+  display: flex;            /* hanya yang active yang muncul */
+  flex-direction: column;
+  justify-content: center;  /* tengah vertikal */
+  align-items: center;      /* tengah horizontal */
 }
-
 /* PAGE 4 */
 .center-photo {
   display: flex;
@@ -328,3 +325,4 @@ updateSlide();
 </body>
 
 </html>
+
