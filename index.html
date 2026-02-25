@@ -26,11 +26,16 @@ body {
 }
 
 .page {
-  display: none;            /* default sembunyi */
+  display: none;
   width: 100%;
-  min-height: 100vh;
-  padding: 40px 20px;
+  height: 100vh;              /* ganti min-height */
+  padding: 0;                 /* hapus padding atas */
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    /* center vertikal */
+  align-items: center;        /* center horizontal */
 }
 
 .page.active {
@@ -75,12 +80,12 @@ h1 {
 .slider {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; margin-top: 80px;
 }
 
 .photo {
-  width: 280px;
-  height: 280px;
+  width: 340px;
+  height: 340px;
   border-radius: 14px;
   border: 2px solid #ff9acb;
   overflow: hidden;
@@ -328,6 +333,7 @@ updateSlide();
 </body>
 
 </html>
+
 
 
 
