@@ -38,7 +38,7 @@ body {
 
 .flower {
   position: absolute;
-  bottom: 10vmin;
+  bottom: 25vmin;
   transform-origin: bottom center;
   z-index: 10;
   --fl-speed: 0.8s;
@@ -1318,4 +1318,5 @@ body {
 .container * {
   -webkit-animation-play-state: paused !important;
           animation-play-state: paused !important;
+
 }/*# sourceMappingURL=main.css.map */
