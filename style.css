@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: azure;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.greetings {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.greetings > span {
+    animation: glow 2.5s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        color: #fff;
+        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
+    }
+    10%, 90% {
+        color: #111;
+        text-shadow: none;
+    }
+}
+
+.greetings > span:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.greetings > span:nth-child(3) {
+    animation-delay: .4s;
+}
+
+.greetings > span:nth-child(4) {
+    animation-delay: .6s;
+}
+
+.greetings > span:nth-child(5) {
+    animation-delay: .8s;
+}
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    max-width: 90%;
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #111;
+    padding: 10px 20px;
+    background-color: #39c6d6;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.button a:hover {
+    background-color: #2ba3b3;
+}
+
+/* Media query untuk desktop (di atas 574px) */
+@media screen and (min-width: 575px) {
+    .greetings {
+        font-size: 6rem;
+        font-weight: 900;
+    }
+    .description {
+        font-size: 1.5rem;
+    }
+    .button a {
+        font-size: 1rem;
+    }
+}
