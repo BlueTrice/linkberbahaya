@@ -33,7 +33,7 @@ body {
 
 .flowers {
   position: relative;
-  transform: translateY(-15vmin);
+  transform: translateY(-25vmin);
 }
 
 .flower {
@@ -1320,5 +1320,6 @@ body {
           animation-play-state: paused !important;
 
 }/*# sourceMappingURL=main.css.map */
+
 
 
