@@ -29,8 +29,17 @@ body {
   display: none;
   width: 100%;
   min-height: 100vh;
-  padding: 30px 20px;
+  padding: 40px 20px;
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* ⬅️ bikin tengah vertikal */
+  align-items: center;       /* ⬅️ bikin tengah horizontal */
+}
+
+.page.active {
+  display: flex;
 }
 
 /* PAGE 4 */
@@ -46,7 +55,7 @@ body {
 
 h1 {
   color: #ff4f9a;
-  font-size: 2.2rem;
+  font-size: 2.6rem;
 }
 
 .special-text {
@@ -70,12 +79,12 @@ h1 {
 }
 
 .photo {
-  width: 220px;
-  height: 220px;
+  width: 260px;
+  height: 260px;
   border-radius: 14px;
   border: 2px solid #ff9acb;
   overflow: hidden;
-  background: white;
+  background: white
 }
 
 .photo img {
@@ -146,7 +155,7 @@ button:active {
 
 <!-- AUDIO -->
 <audio id="bgMusic" loop>
-  <source src="song/you!.mp3" type="audio/mpeg">
+  <source src="you!.mp3" type="audio/mpeg">
 </audio>
 
 <div class="container">
@@ -204,7 +213,7 @@ button:active {
 
   <div class="center-photo">
     <div class="photo">
-      <img src="foto/nisi13.jpg" alt="Foto 1">
+      <img src="nisi13.jpg" alt="Foto 1">
     </div>
   </div>
 
@@ -240,20 +249,20 @@ function nextPage(page) {
 
 /* SLIDER DATA */
 const photos = [
-  "foto/nisi1.jpg",
-  "foto/nisi2.jpg",
-  "foto/nisi3.jpg",
-  "foto/nisi4.jpg",
-  "foto/nisi5.jpeg",
-  "foto/nisi6.jpg",
-  "foto/nisi7.jpg",
-  "foto/nisi8.jpeg",
-  "foto/nisi9.jpeg",
-  "foto/nisi10.jpg",
-  "foto/nisi11.jpg",
-  "foto/nisilast.jpeg",
-  "foto/nisi12.jpg",
-  "foto/roblos.jpg"
+  "nisi1.jpg",
+  "nisi2.jpg",
+  "nisi3.jpg",
+  "nisi4.jpg",
+  "nisi5.jpeg",
+  "nisi6.jpg",
+  "nisi7.jpg",
+  "nisi8.jpeg",
+  "nisi9.jpeg",
+  "nisi10.jpg",
+  "nisi11.jpg",
+  "nisilast.jpeg",
+  "nisi12.jpg",
+  "roblos.jpg"
 ];
 
 const messages = [
@@ -317,4 +326,5 @@ updateSlide();
 </script>
 
 </body>
+
 </html>
